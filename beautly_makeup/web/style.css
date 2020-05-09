@@ -1,0 +1,800 @@
+/* 
+    Document   : style
+    Created on : 11/04/2019, 01:16:49 PM
+    Author     : OMEN
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* ==================
+		Reset
+==================== */
+/* ==================
+	Font Families
+==================== */
+/* ==================
+	Color Palette
+==================== */
+/* ==================
+	 Utils
+==================== */
+/* ==================
+	  Transforms
+==================== */
+/* ==================
+	  Transitions
+==================== */
+/* ==================
+	  Animations
+==================== */
+/* ==================
+	 Placeholder
+==================== */
+/* ==================
+	Pseudo Elements
+==================== */
+/* ==================
+	 Retina Image
+==================== */
+/* ==================
+	  Box Shadow
+==================== */
+/* ==================
+	Flickering Fix
+==================== */
+/* ==================
+   Disable Highlight
+==================== */
+/* ==================
+   CSS Columns
+==================== */
+/* ==================
+   Flexbox
+==================== */
+*:focus { outline: none !important; -webkit-box-shadow: none !important; box-shadow: none !important; }
+
+html { width: 100vw; overflow-x: hidden; }
+
+body { background-color: #1C1536; color: #1C1536; font-family: "Open Sans", sans-serif; }
+
+::-webkit-scrollbar { width: 0.5rem; height: 0.5rem; }
+
+::-webkit-scrollbar-track { background-color: #EEEEEE; border-radius: 0.25rem; }
+
+::-webkit-scrollbar-thumb { background-color: rgba(28, 21, 54, 0.5); border-radius: 0.25rem; }
+
+/* ==================
+	  Utils
+==================== */
+/* ==================
+	  Helpers
+==================== */
+/* ==================
+	  Variables
+==================== */
+/* ==================
+	Font Families
+==================== */
+/* ==================
+	Color Palette
+==================== */
+/* ==================
+        Mixins
+==================== */
+/* ==================
+	 Utils
+==================== */
+/* ==================
+	  Transforms
+==================== */
+/* ==================
+	  Transitions
+==================== */
+/* ==================
+	  Animations
+==================== */
+/* ==================
+	 Placeholder
+==================== */
+/* ==================
+	Pseudo Elements
+==================== */
+/* ==================
+	 Retina Image
+==================== */
+/* ==================
+	  Box Shadow
+==================== */
+/* ==================
+	Flickering Fix
+==================== */
+/* ==================
+   Disable Highlight
+==================== */
+/* ==================
+   CSS Columns
+==================== */
+/* ==================
+   Flexbox
+==================== */
+/* ==================
+        Buttons
+==================== */
+/* ==================
+	Font Families
+==================== */
+/* ==================
+	Color Palette
+==================== */
+.mt-btn {font-weight: 600; outline: none; border-radius: 0.75rem; padding: 0.25rem 2rem; }
+
+.mt-btn.large {
+    padding: 0.5rem 3rem; font-size: 1.75rem; 
+}
+
+.mt-btn.round { border-radius: 2rem; }
+
+.mt-btn.uppercase { text-transform: uppercase; }
+
+.mt-btn.accent { background-color: #FF7BAC !important; }
+
+.mt-btn.dark { background-color: #1C1536; color: white; }
+
+.mt-btn.yellow { background-color: #FBB03B; }
+
+.mt-btn.blue { background-color: #00AAFF; }
+
+.mt-btn.purple { background-color: #a676b9; color: #FFFDFE; }
+
+/* ==================
+        Forms
+==================== */
+/* ==================
+	Font Families
+==================== */
+/* ==================
+	Color Palette
+==================== */
+.mt-form .form-control { border-radius: 0 !important; padding: 1.5rem; font-size: 1.25rem; }
+
+/* ==================
+	  Utils
+==================== */
+/* ============================
+  	Custom Components
+=============================== */
+/* ==================
+	  Helpers
+==================== */
+/* ==================
+	  Variables
+==================== */
+/* ==================
+	Font Families
+==================== */
+/* ==================
+	Color Palette
+==================== */
+/* ==================
+        Mixins
+==================== */
+/* ==================
+	 Utils
+==================== */
+/* ==================
+	  Transforms
+==================== */
+/* ==================
+	  Transitions
+==================== */
+/* ==================
+	  Animations
+==================== */
+/* ==================
+	 Placeholder
+==================== */
+/* ==================
+	Pseudo Elements
+==================== */
+/* ==================
+	 Retina Image
+==================== */
+/* ==================
+	  Box Shadow
+==================== */
+/* ==================
+	Flickering Fix
+==================== */
+/* ==================
+   Disable Highlight
+==================== */
+/* ==================
+   CSS Columns
+==================== */
+/* ==================
+   Flexbox
+==================== */
+/* ==================
+        Buttons
+==================== */
+/* ==================
+	Font Families
+==================== */
+/* ==================
+	Color Palette
+==================== */
+.mt-btn { font-weight: 600; outline: none; border-radius: 0.75rem; padding: 0.25rem 2rem; }
+
+.mt-btn.large { padding: 0.5rem 3rem; font-size: 1.75rem; }
+
+.mt-btn.round { border-radius: 2rem; }
+
+.mt-btn.uppercase { text-transform: uppercase; }
+
+.mt-btn.accent { background-color: #FF7BAC !important; }
+
+.mt-btn.dark { background-color: #1C1536; color: white; }
+
+.mt-btn.yellow { background-color: #FBB03B; }
+
+.mt-btn.blue { background-color: #00AAFF; }
+
+.mt-btn.purple { background-color: #a676b9; color: #FFFDFE; }
+
+/* ==================
+        Forms
+==================== */
+/* ==================
+	Font Families
+==================== */
+/* ==================
+	Color Palette
+==================== */
+* {
+				margin:0px;
+				padding:0px;
+			}
+                        
+ #header{
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+    }              
+  
+.mt-form .form-control { border-radius: 0 !important; padding: 1.5rem; font-size: 1.25rem;  }
+
+.mt-navbar { height: 7rem; background-color: #E8E8E8; padding-top: 0 ;  }
+
+.mt-navbar .nav-link { text-transform: uppercase !important; font-weight: 600; font-size: 0.95rem; color: #1C1536; padding-left: 0.8rem !important; padding-right: 0.8rem !important; }
+
+.mt-navbar .nav-link:hover { -webkit-transition: color 0.25s ease-out; -ms-transition: color 0.25s ease-out; -o-transition: color 0.25s ease-out; transition: color 0.25s ease-out; color: #FF7BAC; }
+
+/* ==================
+	  Helpers
+==================== */
+/* ==================
+	  Variables
+==================== */
+/* ==================
+	Font Families
+==================== */
+/* ==================
+	Color Palette
+==================== */
+/* ==================
+        Mixins
+==================== */
+/* ==================
+	 Utils
+==================== */
+/* ==================
+	  Transforms
+==================== */
+/* ==================
+	  Transitions
+==================== */
+/* ==================
+	  Animations
+==================== */
+/* ==================
+	 Placeholder
+==================== */
+/* ==================
+	Pseudo Elements
+==================== */
+/* ==================
+	 Retina Image
+==================== */
+/* ==================
+	  Box Shadow
+==================== */
+/* ==================
+	Flickering Fix
+==================== */
+/* ==================
+   Disable Highlight
+==================== */
+/* ==================
+   CSS Columns
+==================== */
+/* ==================
+   Flexbox
+==================== */
+/* ==================
+        Buttons
+==================== */
+/* ==================
+	Font Families
+==================== */
+/* ==================
+	Color Palette
+==================== */
+.mt-btn { font-weight: 600; outline: none; border-radius: 0.75rem; padding: 0.25rem 2rem; }
+
+.mt-btn.large { padding: 0.5rem 3rem; font-size: 1.75rem; }
+
+.mt-btn.round { border-radius: 2rem; }
+
+.mt-btn.uppercase { text-transform: uppercase; }
+
+.mt-btn.accent { background-color: #FF7BAC !important; }
+
+.mt-btn.dark { background-color: #1C1536; color: white; }
+
+.mt-btn.yellow { background-color: #FBB03B; }
+
+.mt-btn.blue { background-color: #00AAFF; }
+
+.mt-btn.purple { background-color: #a676b9; color: #FFFDFE; }
+
+/* ==================
+        Forms
+==================== */
+/* ==================
+	Font Families
+==================== */
+/* ==================
+	Color Palette
+==================== */
+.mt-form .form-control { border-radius: 0 !important; padding: 1.5rem; font-size: 1.25rem; }
+
+.mt-banner { height: 20rem; text-align: center; }
+
+.mt-banner_title { color: #9F7EB6; font-size: 3rem; text-transform: uppercase; font-weight: 600; margin-bottom: 1rem; }
+
+.mt-banner_icon { overflow: hidden; width: 2rem; max-width: 2rem; min-width: 2rem; height: 2rem; max-height: 2rem; min-height: 2rem; background-color: #604E9A; border-radius: 50%; margin: 0 1rem; font-size: 1rem; }
+
+.mt-banner_icon:hover { -webkit-transition: background-color 0.25s ease-out; -ms-transition: background-color 0.25s ease-out; -o-transition: background-color 0.25s ease-out; transition: background-color 0.25s ease-out; cursor: pointer; background-color: #FF7BAC; }
+
+/* ==================
+	  Helpers
+==================== */
+/* ==================
+	  Variables
+==================== */
+/* ==================
+	Font Families
+==================== */
+/* ==================
+	Color Palette
+==================== */
+/* ==================
+        Mixins
+==================== */
+/* ==================
+	 Utils
+==================== */
+/* ==================
+	  Transforms
+==================== */
+/* ==================
+	  Transitions
+==================== */
+/* ==================
+	  Animations
+==================== */
+/* ==================
+	 Placeholder
+==================== */
+/* ==================
+	Pseudo Elements
+==================== */
+/* ==================
+	 Retina Image
+==================== */
+/* ==================
+	  Box Shadow
+==================== */
+/* ==================
+	Flickering Fix
+==================== */
+/* ==================
+   Disable Highlight
+==================== */
+/* ==================
+   CSS Columns
+==================== */
+/* ==================
+   Flexbox
+==================== */
+/* ==================
+        Buttons
+==================== */
+/* ==================
+	Font Families
+==================== */
+/* ==================
+	Color Palette
+==================== */
+.mt-btn { font-weight: 600; outline: none; border-radius: 0.75rem; padding: 0.25rem 2rem; }
+
+.mt-btn.large { padding: 0.5rem 3rem; font-size: 1.75rem; }
+
+.mt-btn.round { border-radius: 2rem; }
+
+.mt-btn.uppercase { text-transform: uppercase; }
+
+.mt-btn.accent { background-color: #FF7BAC !important; }
+
+.mt-btn.dark { background-color: #1C1536; color: white; }
+
+.mt-btn.yellow { background-color: #FBB03B; }
+
+.mt-btn.blue { background-color: #00AAFF; }
+
+.mt-btn.purple { background-color: #a676b9; color: #FFFDFE; }
+
+/* ==================
+        Forms
+==================== */
+/* ==================
+	Font Families
+==================== */
+/* ==================
+	Color Palette
+==================== */
+.mt-form .form-control { border-radius: 0 !important; padding: 1.5rem; font-size: 1.25rem; }
+
+.mt-options { margin-bottom: 3rem; }
+
+.mt-options_card_img { height: 380px; max-height: 380px; min-height: 380px; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-position: center; background-repeat: no-repeat; background-color: rgba(255, 255, 255, 0.25); background-image: url("https://picsum.photos/380/380?image=996"); }
+
+.mt-options_card_img.nails { background-image: url("https://picsum.photos/380/380?image=628"); }
+
+.mt-options_card_img.makeup { background-image: url("https://picsum.photos/380/380?image=64"); }
+
+.mt-options_card_data { padding: 1.5rem; text-align: center; background-color: #9F7EB6; }
+
+.mt-options_card_data h2 { font-weight: 700; }
+
+.mt-options_card_data p { font-size: 0.85rem; }
+
+.mt-options_card_data.blue { background-color: #00AAFF; }
+
+/* ==================
+	  Helpers
+==================== */
+/* ==================
+	  Variables
+==================== */
+/* ==================
+	Font Families
+==================== */
+/* ==================
+	Color Palette
+==================== */
+/* ==================
+        Mixins
+==================== */
+/* ==================
+	 Utils
+==================== */
+/* ==================
+	  Transforms
+==================== */
+/* ==================
+	  Transitions
+==================== */
+/* ==================
+	  Animations
+==================== */
+/* ==================
+	 Placeholder
+==================== */
+/* ==================
+	Pseudo Elements
+==================== */
+/* ==================
+	 Retina Image
+==================== */
+/* ==================
+	  Box Shadow
+==================== */
+/* ==================
+	Flickering Fix
+==================== */
+/* ==================
+   Disable Highlight
+==================== */
+/* ==================
+   CSS Columns
+==================== */
+/* ==================
+   Flexbox
+==================== */
+/* ==================
+        Buttons
+==================== */
+/* ==================
+	Font Families
+==================== */
+/* ==================
+	Color Palette
+==================== */
+.mt-btn { font-weight: 600; outline: none; border-radius: 0.75rem; padding: 0.25rem 2rem; }
+
+.mt-btn.large { padding: 0.5rem 3rem; font-size: 1.75rem; }
+
+.mt-btn.round { border-radius: 2rem; }
+
+.mt-btn.uppercase { text-transform: uppercase; }
+
+.mt-btn.accent { background-color: #FF7BAC !important; }
+
+.mt-btn.dark { background-color: #1C1536; color: white; }
+
+.mt-btn.yellow { background-color: #FBB03B; }
+
+.mt-btn.blue { background-color: #00AAFF; }
+
+.mt-btn.purple { background-color: #a676b9; color: #FFFDFE; }
+
+/* ==================
+        Forms
+==================== */
+/* ==================
+	Font Families
+==================== */
+/* ==================
+	Color Palette
+==================== */
+.mt-form .form-control { border-radius: 0 !important; padding: 1.5rem; font-size: 1.25rem; }
+
+.mt-about { width: 75%; margin-left: auto; margin-right: auto; margin-bottom: 3rem; }
+
+.mt-about_title { color: #9F7EB6; text-align: center; text-transform: uppercase; font-size: 3rem; font-weight: 600; margin-bottom: 2rem; }
+
+.mt-about_title.mt-mb { margin-bottom: 3rem; }
+
+.mt-about_card { margin-bottom: 3rem; }
+
+.mt-about_card_header { height: 430px; max-height: 430px; min-height: 430px; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-position: center; background-repeat: no-repeat; background-color: rgba(255, 255, 255, 0.25); background-image: url("https://picsum.photos/800/400?image=1027"); }
+
+.mt-about_card_main { text-align: center; background-color: #604E9A; padding: 4rem 5rem; }
+
+.mt-about_card_main p { font-size: 0.85rem; color: white; margin-bottom: 2rem; }
+
+.mt-about_card_footer_item { padding: 1rem; font-size: 2rem; width: 100%; text-align: center; font-weight: 700; }
+
+.mt-about_card_footer_item.accent { background-color: #FF7BAC; }
+
+.mt-about_card_footer_item.blue { background-color: #00AAFF; }
+
+.mt-about_card_footer_item.yellow { background-color: #FBB03B; }
+
+/* ==================
+	  Helpers
+==================== */
+/* ==================
+	  Variables
+==================== */
+/* ==================
+	Font Families
+==================== */
+/* ==================
+	Color Palette
+==================== */
+/* ==================
+        Mixins
+==================== */
+/* ==================
+	 Utils
+==================== */
+/* ==================
+	  Transforms
+==================== */
+/* ==================
+	  Transitions
+==================== */
+/* ==================
+	  Animations
+==================== */
+/* ==================
+	 Placeholder
+==================== */
+/* ==================
+	Pseudo Elements
+==================== */
+/* ==================
+	 Retina Image
+==================== */
+/* ==================
+	  Box Shadow
+==================== */
+/* ==================
+	Flickering Fix
+==================== */
+/* ==================
+   Disable Highlight
+==================== */
+/* ==================
+   CSS Columns
+==================== */
+/* ==================
+   Flexbox
+==================== */
+/* ==================
+        Buttons
+==================== */
+/* ==================
+	Font Families
+==================== */
+/* ==================
+	Color Palette
+==================== */
+.mt-btn { font-weight: 600; outline: none; border-radius: 0.75rem; padding: 0.25rem 2rem; }
+
+.mt-btn.large { padding: 0.5rem 3rem; font-size: 1.75rem; }
+
+.mt-btn.round { border-radius: 2rem; }
+
+.mt-btn.uppercase { text-transform: uppercase; }
+
+.mt-btn.accent { background-color: #FF7BAC !important; }
+
+.mt-btn.dark { background-color: #1C1536; color: white; }
+
+.mt-btn.yellow { background-color: #FBB03B; }
+
+.mt-btn.blue { background-color: #00AAFF; }
+
+.mt-btn.purple { background-color: #a676b9; color: #FFFDFE; }
+
+/* ==================
+        Forms
+==================== */
+/* ==================
+	Font Families
+==================== */
+/* ==================
+	Color Palette
+==================== */
+.mt-form .form-control { border-radius: 0 !important; padding: 1.5rem; font-size: 1.25rem; }
+
+.mt-subscribe { background-color: #FF7BAC; margin-bottom: 3rem; }
+
+.mt-subscribe_header { padding: 3rem 0; text-align: center; }
+
+.mt-subscribe_header h2, .mt-subscribe_header span { font-size: 2rem; font-weight: bold; }
+
+.mt-subscribe_header h2 { text-transform: uppercase; margin-bottom: 0; }
+
+.mt-subscribe_main .mt-img { height: 350px; max-height: 350px; min-height: 350px; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-position: center; background-repeat: no-repeat; background-color: rgba(255, 255, 255, 0.25); background-image: url("https://picsum.photos/350/350?random"); }
+
+.mt-subscribe_footer { width: 75%; margin: 0 auto; text-align: center; padding: 3rem; }
+
+.mt-subscribe_footer > p { font-size: 2rem; font-weight: bold; margin-bottom: 2rem; }
+
+/* ==================
+	  Helpers
+==================== */
+/* ==================
+	  Variables
+==================== */
+/* ==================
+	Font Families
+==================== */
+/* ==================
+	Color Palette
+==================== */
+/* ==================
+        Mixins
+==================== */
+/* ==================
+	 Utils
+==================== */
+/* ==================
+	  Transforms
+==================== */
+/* ==================
+	  Transitions
+==================== */
+/* ==================
+	  Animations
+==================== */
+/* ==================
+	 Placeholder
+==================== */
+/* ==================
+	Pseudo Elements
+==================== */
+/* ==================
+	 Retina Image
+==================== */
+/* ==================
+	  Box Shadow
+==================== */
+/* ==================
+	Flickering Fix
+==================== */
+/* ==================
+   Disable Highlight
+==================== */
+/* ==================
+   CSS Columns
+==================== */
+/* ==================
+   Flexbox
+==================== */
+/* ==================
+        Buttons
+==================== */
+/* ==================
+	Font Families
+==================== */
+/* ==================
+	Color Palette
+==================== */
+.mt-btn { font-weight: 600; outline: none; border-radius: 0.75rem; padding: 0.25rem 2rem; }
+
+.mt-btn.large { padding: 0.5rem 3rem; font-size: 1.75rem; }
+
+.mt-btn.round { border-radius: 2rem; }
+
+.mt-btn.uppercase { text-transform: uppercase; }
+
+.mt-btn.accent { background-color: #FF7BAC !important; }
+
+.mt-btn.dark { background-color: #1C1536; color: white; }
+
+.mt-btn.yellow { background-color: #FBB03B; }
+
+.mt-btn.blue { background-color: #00AAFF; }
+
+.mt-btn.purple { background-color: #a676b9; color: #FFFDFE; }
+
+/* ==================
+        Forms
+==================== */
+/* ==================
+	Font Families
+==================== */
+/* ==================
+	Color Palette
+==================== */
+.mt-form .form-control { border-radius: 0 !important; padding: 1.5rem; font-size: 1.25rem; }
+
+.mt-contact { width: 75%; margin-left: auto; margin-right: auto; margin-bottom: 3rem; }
+
+.mt-contact_title { color: #FFFDFE; text-align: center; text-transform: uppercase; font-size: 3rem; font-weight: 600; margin-bottom: 2rem; }
+
+.mt-contact_title.mt-mb { margin-bottom: 3rem; }
+
+.mt-contact_main { width: 100%; height: auto; }
+
+.mt-contact_main_item { width: 50%; float: left; height: 450px; max-height: 450px; min-height: 450px; }
+
+.mt-contact_main_item.form { background-color: #a676b9; padding: 2rem; }
+
+.mt-contact_main_item.form > .mt-form > .form-group > textarea { height: 200px; max-height: 200px; min-height: 200px; }
+
+.mt-contact_main_item.location { padding-left: 1rem; }
+
+.mt-contact_main_item.location h2 { color: #a676b9; text-transform: uppercase; }
+
+.mt-contact_main_item.location p { color: #7d768a; width: 12rem; font-size: 0.8rem; }
+
+.mt-contact_footer { width: 100%; float: left; text-align: center; padding: 4rem; }
+
+.mt-contact_footer.mt-button { margin-top: 1rem; }
+

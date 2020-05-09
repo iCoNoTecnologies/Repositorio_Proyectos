@@ -1,0 +1,284 @@
+<%-- 
+    Document   : index
+    Created on : 11/04/2019, 01:06:10 PM
+    Author     : OMEN
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ 
+  <title>Beauty at Home</title>
+
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0">
+  <!--<link rel="icon" type="image/x-icon" href="favicon.ico">-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script language="JavaScript" src="jquery.js"></script>
+        
+        <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>  
+        <script src="smooth-scroll.min.js"></script>
+        
+        
+     <script>
+                    var scroll = new SmoothScroll('a[href*="#"]', {
+	          speed: 2000,
+	         speedAsDuration: true
+                    });
+                    
+                    
+                  smoothScroll.init({
+                      selector: '[data-scroll]',
+                      selectorHeader: null,
+                      easing: 'easeInOutCubic',
+                      offset: 0,
+                      callback: function(anchor, toggle){}
+                      
+                  });  
+                  
+                  
+                  
+                </script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header id="header" >
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <nav class="mt-navbar navbar navbar-expand-lg" class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <a class="navbar-brand" href="#">Beauty</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nb-menu" aria-controls="nb-menu" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="nb-menu">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" scope="col" abbr="Starter" data-scroll href="#sec1">acerca de</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">hair style</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">makeup</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" scope="col" abbr="Starter" data-scroll href="#sec2">skincare</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" cope="col" abbr="Starter" data-scroll href="#sec3">contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">reserva</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+  <!-- Banner -->
+  <div class="container">
+    <div class="row mt-banner">
+      <div class="col-12 d-flex align-items-center justify-content-center flex-column">
+        <h1 class="mt-banner_title">Wink, Smile & Shine</h1>
+        <div class="d-flex align-items-center justify-content-center">
+          <a class="mt-banner_icon d-flex align-items-center justify-content-center">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a class="mt-banner_icon d-flex align-items-center justify-content-center">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a class="mt-banner_icon d-flex align-items-center justify-content-center">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a class="mt-banner_icon d-flex align-items-center justify-content-center">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a class="mt-banner_icon d-flex align-items-center justify-content-center">
+            <i class="fab fa-pinterest-p"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Options -->
+  <div class="container">
+    <div class="row mt-options">
+      <div class="col-lg-4 pr-lg-0 mt-options_card">
+        <div class="mt-options_card_img"></div>
+        <div class="mt-options_card_data">
+          <h2>Hairstyle</h2>
+          <p>I'm a paragraph. Click here to add your own text and edit me</p>
+          <button type="button" class="btn font-weight-bold mt-btn accent">Ver más...</button>
+        </div>
+      </div>
+      <div class="col-lg-4 px-lg-0 mt-options_card">
+        <div class="mt-options_card_img nails"></div>
+        <div class="mt-options_card_data blue">
+          <h2>Nails</h2>
+          <p>I'm a paragraph. Click here to add your own text and edit me</p>
+          <button type="button" class="btn btn-dark font-weight-bold mt-btn">Ver más...</button>
+        </div>
+      </div>
+      <div class="col-lg-4 pl-lg-0 mt-options_card">
+        <div class="mt-options_card_img makeup"></div>
+        <div class="mt-options_card_data">
+          <h2>Makeup</h2>
+          <p>I'm a paragraph. Click here to add your own text and edit me</p>
+          <button type="button" class="btn btn-warning font-weight-bold mt-btn">Ver más...</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Us -->
+  <div id="sec1">
+  <div class="container">
+    <div class="row mt-about">
+      <div class="col">
+        <h2 class="mt-about_title mt-mb">Acerca de Nosotros</h2>
+        <div class="mt-about_card">
+          <div class="mt-about_card_header"></div>
+          <div class="mt-about_card_main">
+            <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click
+              me to add your own content and make changes to the font. I’m a great place for you to tell a story and let
+              your users know a little more about you.</p>
+            <button type="button" class="btn btn-warning font-weight-bold mt-btn">Más videos</button>
+          </div>
+          <div class="mt-about_card_footer d-flex align-items-center justify-content-center">
+            <div class="mt-about_card_footer_item accent">Hairstyle</div>
+            <div class="mt-about_card_footer_item blue">Nails</div>
+            <div class="mt-about_card_footer_item yellow">Makeup</div>
+          </div>
+        </div>
+        <h2 class="mt-about_title">
+          ¡Haz tu cita
+          <br> y vamos a tu domicilio!
+        </h2>
+        <div class="d-flex align-items-center justify-content-center">
+          <button type="button" class="btn btn-warning font-weight-bold mt-btn large uppercase round mr-3">Cotizar</button>
+          <button type="button" class="btn font-weight-bold mt-btn large uppercase round accent">Reservar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      </div>
+
+  <!-- Subscribe -->
+  <div id="sec2">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="mt-subscribe">
+          <div class="mt-subscribe_header">
+            <h2>Síguenos en Instagram</h2>
+            <span>#BeautyAtHome</span>
+          </div>
+          <div class="mt-subscribe_main">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-4 px-0">
+                  <div class="mt-img"></div>
+                </div>
+                <div class="col-lg-4 px-0">
+                  <div class="mt-img"></div>
+                </div>
+                <div class="col-lg-4 px-0">
+                  <div class="mt-img"></div>
+                </div>
+                <div class="col-lg-4 px-0">
+                  <div class="mt-img"></div>
+                </div>
+                <div class="col-lg-4 px-0">
+                  <div class="mt-img"></div>
+                </div>
+                <div class="col-lg-4 px-0">
+                  <div class="mt-img"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-subscribe_footer">
+            <p>
+              Para ver tips y secretos
+              <br> de cómo verte bien, suscríbete
+              <br> a nuestro newsletter mensual
+            </p>
+            <form class="mt-form">
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Correo Electrónico">
+              </div>
+              <button type="submit" class="btn font-weight-bold mt-btn large uppercase round dark">suscribir</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Contact -->
+  <div id="sec3">
+  <div class="container">
+    <div class="row mt-contact">
+      <div class="col">
+        <h2 class="mt-contact_title mt-mb">Contáctanos</h2>
+        <div class="mt-contact_main">
+          <div class="mt-contact_main_item form">
+            <form class="mt-form">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Nombre">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Celular">
+              </div>
+              <div class="form-group">
+                <textarea type="email" class="form-control" placeholder="Mensaje"></textarea>
+              </div>
+              <div class="form-group">
+                <select type="email" class="form-control" placeholder="Municipio">
+                  <option value="Queretaro">Querétaro</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="mt-contact_main_item location">
+            <h2 uppercase>Querétaro</h2>
+            <p>Blvd. Bernardo Quintana 3100 Col. Centro Sur, Querétaro, Qro. C.P. 76090</p>
+
+            <p>Correo: contacto@beautyathome.com Tel: (442) 000-0000</p>
+          </div>
+        </div>
+        <div class="mt-contact_footer">
+          <button type="submit" class="btn font-weight-bold mt-btn large uppercase round purple">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script> 
+</body>
+
+</html>
