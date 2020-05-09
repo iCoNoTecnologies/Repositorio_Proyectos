@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps1="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             xmlns:renderers="clr-namespace:QRReaderDemo.Framework.Renderers;assembly=QRReaderDemo"
+             x:Class="QRReaderDemo.PuntosPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="500" />
+                
+                </Grid.RowDefinitions>
+                <renderers:CustomMap x:Name="mapView" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Grid.Row="0" IsShowingUser="True">
+                    <!--<maps1:Map x:Name="mapView" HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" Grid.Row="0" />    -->
+                </renderers:CustomMap>
+                
+                <ListView x:Name="listaPuntos" Grid.Row="1">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding direccion}" Detail="{Binding visitas}" />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+            
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

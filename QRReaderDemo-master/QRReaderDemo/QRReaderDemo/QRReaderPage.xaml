@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:QRReaderDemo"
+             x:Class="QRReaderDemo.QRReaderPage">
+
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="back.png" Aspect="AspectFill" />
+            <BoxView Color="AliceBlue" Opacity="0.9"/>
+            <Label x:Name="Posicion" Grid.Row="0" HorizontalTextAlignment="End" Text="No hay información de GPS disponible" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0" Source="logo.png" WidthRequest="55" HeightRequest="55" Margin="20,20,0,10" />
+                    <Label Grid.Column="1" Margin="0,20,20,10" Text="Secretaría de Seguridad Pública Municipal de Corregidora" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#102f6f" />
+                </Grid>
+                
+                <StackLayout Grid.Row="1">
+                    <Label Text="DATOS GENERALES" BackgroundColor="#102f6f" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HeightRequest="30" />
+                    
+                    <Label x:Name="oficial" Text="" TextColor="#102f6f" FontAttributes="Bold" Margin="20,0" HorizontalTextAlignment="Center" />
+                    
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="10,0,10,0">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="End" Padding="0">
+                            <Label Text="TURNO" HorizontalOptions="FillAndExpand" YAlign="End" VerticalOptions="Center" FontAttributes="Bold" TextColor="#102f6f" />
+                            <Picker x:Name="pickerTurno" HorizontalOptions="End" VerticalOptions="End" Title="TURNO" TextColor="#102f6f" SelectedIndexChanged="pickerTurno_SelectedIndexChanged">
+                                <Picker.Items>
+                                    <x:String>1</x:String>
+                                    <x:String>2</x:String>
+                                    <x:String>3</x:String>
+                                    <x:String>MIXTO</x:String>
+                                </Picker.Items>
+                            </Picker>
+                        </StackLayout>
+                        <!--<StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="End" Padding="0">
+                            <Label Text="ÁREA" HorizontalOptions="FillAndExpand" YAlign="End" VerticalOptions="Center" FontAttributes="Bold" TextColor="#102f6f" />
+                            <Picker x:Name="pickerArea" HorizontalOptions="End" VerticalOptions="End" Title="ÁREA" TextColor="#102f6f" SelectedIndexChanged="pickerArea_SelectedIndexChanged">
+                                <Picker.Items>
+                                    <x:String>1</x:String>
+                                    <x:String>2</x:String>
+                                    <x:String>3</x:String>
+                                    <x:String>4</x:String>
+                                    <x:String>5</x:String>
+                                </Picker.Items>
+                            </Picker>
+                        </StackLayout>-->
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="End" Padding="0">
+                            <Label Text="UNIDAD" HorizontalOptions="FillAndExpand" YAlign="End" VerticalOptions="Center" FontAttributes="Bold" TextColor="#102f6f" />
+                            <Picker x:Name="pickerUnidad" HorizontalOptions="End" VerticalOptions="End" Title="UNIDAD" TextColor="#102f6f" SelectedIndexChanged="pickerUnidad_SelectedIndexChanged" WidthRequest="200">
+                                <!--<Picker.Items>
+                                    <x:String>1</x:String>
+                                    <x:String>2</x:String>
+                                    <x:String>3</x:String>
+                                </Picker.Items>-->
+                            </Picker>
+                        </StackLayout>
+                    </StackLayout>
+
+                    
+
+                    <Label Text="ACCIONES" BackgroundColor="#102f6f" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HeightRequest="30" Margin="0,0,0,20"/>
+
+                    <Button x:Name="ButtonFrecuencia" IsEnabled="False" Text="Frecuencia de paso" Clicked="Button_Clicked" WidthRequest="380" HeightRequest="60" HorizontalOptions="Center" FontSize="19" FontAttributes="Bold" TextColor="White" BackgroundColor="#102f6f" BorderRadius="40" />
+                    
+                    <StackLayout x:Name="contentResult" IsVisible="False" WidthRequest="500" HeightRequest="130" Padding="100,10,100,0">
+                        <Label x:Name="Resultado" TextColor="#102f6f" FontAttributes="Bold"  FontSize="15" HorizontalTextAlignment="Center" />
+                        <Label Text="Si los datos son correctos, presione enviar"  FontSize="13" TextColor="#102f6f" HorizontalTextAlignment="Center" />
+                        <Button x:Name="bnt1" Text="Enviar" Clicked="btn1_click" WidthRequest="130" HeightRequest="35" BackgroundColor="#102f6f" TextColor="White" BorderRadius="40" HorizontalOptions="Center" />
+                    </StackLayout>
+
+                    <StackLayout x:Name="contentResult2" IsVisible="False" WidthRequest="420"  HeightRequest="130" Padding="100,10,100,0">
+                        <Label x:Name="Resultado2" TextColor="#102f6f" FontAttributes="Bold"  FontSize="15" HorizontalTextAlignment="Center" />
+                        <Label Text=":(" TextColor="#102f6f" FontSize="18" HorizontalTextAlignment="Center" />
+                        
+                    </StackLayout>
+
+
+                    <Button Text="Historial" Clicked="Button_Clicked_2" WidthRequest="380" HeightRequest="60" HorizontalOptions="Center" FontSize="19" FontAttributes="Bold" TextColor="White" BackgroundColor="#102f6f" BorderRadius="40" />
+                    <Button Text="Consulta Puntos" Clicked="Button_Clicked_3" WidthRequest="380" HeightRequest="60" HorizontalOptions="Center" FontSize="19" FontAttributes="Bold" TextColor="White" BackgroundColor="#102f6f" BorderRadius="40"/>
+                    <Button Text="Salir" Clicked="Button_Clicked_1" WidthRequest="380" HeightRequest="60" HorizontalOptions="Center" FontSize="19" FontAttributes="Bold" TextColor="White" BackgroundColor="#102f6f" BorderRadius="40" />
+                </StackLayout>
+
+                <Label Grid.Row="2" Text="2019. Secretaría de Seguridad Pública Municipal de Corregidora. v2.1." TextColor="#102f6f" HorizontalTextAlignment="Center" />
+                <Label />
+                
+                <!--<Button Text="Registrar Frecuencia de Paso" Clicked="Button_Clicked" />
+                    <Button x:Name="bnt1" Text="Enviar" Clicked="btn1_click" />-->
+            </Grid>
+        </Grid>
+        
+    </ContentPage.Content>
+
+</ContentPage>

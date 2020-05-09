@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="QRReaderDemo.Actualizar">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <StackLayout Grid.Row="0">
+                <Image  Source="logo.png" WidthRequest="200" HeightRequest="200" Margin="0,30,0,5" />
+                <Label Text="Secretaría de Seguridad Pública Municipal de Corregidora" FontSize="32" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="#102f6f" />
+                <Label Text="- Frecuencia de paso -" FontSize="24" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="#102f6f" />
+            </StackLayout>
+            <StackLayout Grid.Row="1" VerticalOptions="Center" HorizontalOptions="Center">
+                <Button Text="Actualizar" TextColor="White" HeightRequest="50" WidthRequest="100" BackgroundColor="Blue" Clicked="Button_Clicked">
+
+                </Button>
+                <Label Text="se necesita actualizacion pulsa el boton para actualizar!!" TextColor="Red"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

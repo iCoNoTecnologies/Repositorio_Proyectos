@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QRReaderDemo.PageAnexo3">
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="back1280.png" Aspect="AspectFill" />
+            <BoxView Color="AliceBlue" Opacity="0.9"/>
+
+            <StackLayout >
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="60" />
+                        <ColumnDefinition Width="60" />
+                        <ColumnDefinition Width="60"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Label Grid.Row="0" Grid.Column="0" Text="ASISTENCIA:" BackgroundColor="#102f6f" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                    <Label Grid.Row="0" Grid.Column="1" Text="SIEMPRE" BackgroundColor="#102f6f" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="10" />
+                    <Label Grid.Row="0" Grid.Column="2" Text="ALGUNAS VECES" BackgroundColor="#102f6f" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="10" />
+                    <Label Grid.Row="0" Grid.Column="3" Text="NUNCA" BackgroundColor="#102f6f" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="10" />
+
+                    <Label Grid.Row="1" Grid.Column="0" Text="Registro de asistencia" FontSize="16" TextColor="#102f6f" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalTextAlignment="End" />
+                    <Button ClassId="button1" x:Name="button1" Clicked="button_Clicked1" Grid.Row="1" Grid.Column="1" Text="" HeightRequest="60" WidthRequest="60" BorderRadius="100" />
+                    <Button ClassId="button2" x:Name="button2" Clicked="button_Clicked1" Grid.Row="1" Grid.Column="2" Text="" HeightRequest="60" WidthRequest="60" BorderRadius="100" />
+                    <Button ClassId="button3" x:Name="button3" Clicked="button_Clicked1" Grid.Row="1" Grid.Column="3" Text="" HeightRequest="60" WidthRequest="60" BorderRadius="100" />
+
+                    <Label Grid.Row="2" Grid.Column="0" Text="PUNTUALIDAD:" BackgroundColor="#102f6f" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                    <Label Grid.Row="2" Grid.Column="1" Text="SIEMPRE" BackgroundColor="#102f6f" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="10" />
+                    <Label Grid.Row="2" Grid.Column="2" Text="ALGUNAS VECES" BackgroundColor="#102f6f" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="10" />
+                    <Label Grid.Row="2" Grid.Column="3" Text="NUNCA" BackgroundColor="#102f6f" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="10" />
+
+                    <Label Grid.Row="3" Grid.Column="0" Text="Registro de pase de lista" FontSize="16" TextColor="#102f6f" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalTextAlignment="End" />
+                    <Label Grid.Row="4" Grid.Column="0" Text="Registro de asistencia a cursos" FontSize="16" TextColor="#102f6f" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalTextAlignment="End" />
+
+                    <Button ClassId="button4" x:Name="button4" Clicked="button_Clicked2" Grid.Row="3" Grid.Column="1" Text="" HeightRequest="60" WidthRequest="60" BorderRadius="100" />
+                    <Button ClassId="button5" x:Name="button5" Clicked="button_Clicked2" Grid.Row="3" Grid.Column="2" Text="" HeightRequest="60" WidthRequest="60" BorderRadius="100" />
+                    <Button ClassId="button6" x:Name="button6" Clicked="button_Clicked2" Grid.Row="3" Grid.Column="3" Text="" HeightRequest="60" WidthRequest="60" BorderRadius="100" />
+
+                    <Button ClassId="button7" x:Name="button7" Clicked="button_Clicked3" Grid.Row="4" Grid.Column="1" Text="" HeightRequest="60" WidthRequest="60" BorderRadius="100" />
+                    <Button ClassId="button8" x:Name="button8" Clicked="button_Clicked3" Grid.Row="4" Grid.Column="2" Text="" HeightRequest="60" WidthRequest="60" BorderRadius="100" />
+                    <Button ClassId="button9" x:Name="button9" Clicked="button_Clicked3" Grid.Row="4" Grid.Column="3" Text="" HeightRequest="60" WidthRequest="60" BorderRadius="100" />
+
+                    <Label Grid.Row="5" Grid.Column="0" Text="RESPETO A SUS SUPERIORES:" BackgroundColor="#102f6f" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                    <Label Grid.Row="5" Grid.Column="1" Text="SIEMPRE" BackgroundColor="#102f6f" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="10" />
+                    <Label Grid.Row="5" Grid.Column="2" Text="ALGUNAS VECES" BackgroundColor="#102f6f" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="10" />
+                    <Label Grid.Row="5" Grid.Column="3" Text="NUNCA" BackgroundColor="#102f6f" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="10" />
+
+                    <Label Grid.Row="6" Grid.Column="0" Text="Cumple con el protocolo de saludo y respeto a sus superiores" FontSize="16" TextColor="#102f6f" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalTextAlignment="End" />
+                    <Button ClassId="button10" x:Name="button10" Clicked="button_Clicked4" Grid.Row="6" Grid.Column="1" Text="" HeightRequest="60" WidthRequest="60" BorderRadius="100" />
+                    <Button ClassId="button11" x:Name="button11" Clicked="button_Clicked4" Grid.Row="6" Grid.Column="2" Text="" HeightRequest="60" WidthRequest="60" BorderRadius="100" />
+                    <Button ClassId="button12" x:Name="button12" Clicked="button_Clicked4" Grid.Row="6" Grid.Column="3" Text="" HeightRequest="60" WidthRequest="60" BorderRadius="100" />
+
+                    <Label Grid.Row="7" Grid.Column="0" Text="INTERACCIÓN CON SUS COMPAÑEROS:" BackgroundColor="#102f6f" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                    <Label Grid.Row="7" Grid.Column="1" Text="SIEMPRE" BackgroundColor="#102f6f" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="10" />
+                    <Label Grid.Row="7" Grid.Column="2" Text="ALGUNAS VECES" BackgroundColor="#102f6f" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="10" />
+                    <Label Grid.Row="7" Grid.Column="3" Text="NUNCA" BackgroundColor="#102f6f" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="10" />
+
+                    <Label Grid.Row="8" Grid.Column="0" Text="Muestra respeto en la interacción con sus compañeros" FontSize="16" TextColor="#102f6f" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalTextAlignment="End" />
+                    <Button ClassId="button13" x:Name="button13" Clicked="button_Clicked5" Grid.Row="8" Grid.Column="1" Text="" HeightRequest="60" WidthRequest="60" BorderRadius="100" />
+                    <Button ClassId="button14" x:Name="button14" Clicked="button_Clicked5" Grid.Row="8" Grid.Column="2" Text="" HeightRequest="60" WidthRequest="60" BorderRadius="100" />
+                    <Button ClassId="button15" x:Name="button15" Clicked="button_Clicked5" Grid.Row="8" Grid.Column="3" Text="" HeightRequest="60" WidthRequest="60" BorderRadius="100" />
+
+                    <Label Grid.Row="9" Grid.Column="0" Text="CUMPLE PROTOCOLOS Y PROCEDIMIENTOS:" BackgroundColor="#102f6f" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+                    <Label Grid.Row="9" Grid.Column="1" Text="SIEMPRE" BackgroundColor="#102f6f" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="10" />
+                    <Label Grid.Row="9" Grid.Column="2" Text="ALGUNAS VECES" BackgroundColor="#102f6f" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="10" />
+                    <Label Grid.Row="9" Grid.Column="3" Text="NUNCA" BackgroundColor="#102f6f" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="10" />
+
+                    <Label Grid.Row="10" Grid.Column="0" Text="Realiza sus actividades apegadas a los protocolos y procedimientos vigentes" FontSize="16" TextColor="#102f6f" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalTextAlignment="End" />
+
+                    <Button ClassId="button16" x:Name="button16" Clicked="button_Clicked6" Grid.Row="10" Grid.Column="1" Text="" HeightRequest="60" WidthRequest="60" BorderRadius="100" />
+                    <Button ClassId="button17" x:Name="button17" Clicked="button_Clicked6" Grid.Row="10" Grid.Column="2" Text="" HeightRequest="60" WidthRequest="60" BorderRadius="100" />
+                    <Button ClassId="button18" x:Name="button18" Clicked="button_Clicked6" Grid.Row="10" Grid.Column="3" Text="" HeightRequest="60" WidthRequest="60" BorderRadius="100" />
+
+                </Grid>
+                <Button x:Name="Guardar" Text="Guardar y regresar" Clicked="Guardar_Clicked" TextColor="White" BackgroundColor="LightSeaGreen" />
+            </StackLayout>
+        </Grid>
+        
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QRReaderDemo.HistorialPage">
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="back.png" Aspect="AspectFill" />
+            <BoxView Color="AliceBlue" Opacity="0.9"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Image Grid.Column="0" Source="logo.png" WidthRequest="90" HeightRequest="90" Margin="20,20,0,10" />
+                    <Label Grid.Column="1" Margin="0,20,20,10" Text="Secretaría de Seguridad Pública Municipal de Corregidora" FontSize="22" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="#102f6f" />
+                </Grid>
+
+                <StackLayout Grid.Row="1">
+                    <Label Text="DATOS GENERALES" BackgroundColor="#102f6f" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HeightRequest="40" />
+
+                    <Label x:Name="oficial" Text="" TextColor="#102f6f" FontAttributes="Bold" Margin="20,0" HorizontalTextAlignment="Center" />
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="10,0,10,0">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="End" Padding="0">
+                            <Label Text="DESDE" HorizontalOptions="FillAndExpand" YAlign="End" VerticalOptions="Center" FontAttributes="Bold" TextColor="#102f6f" />
+                            <DatePicker WidthRequest="110" Format="dd/MM/yyyy" x:Name="pickerDesde" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="End" Padding="0">
+                            <Label Text="HASTA" HorizontalOptions="FillAndExpand" YAlign="End" VerticalOptions="Center" FontAttributes="Bold" TextColor="#102f6f" />
+                            <DatePicker WidthRequest="110" Format="dd/MM/yyyy" x:Name="pickerHasta" />
+                        </StackLayout>
+                        <Button Text="Actualizar" HorizontalOptions="CenterAndExpand" VerticalOptions="End" Clicked="Button_Clicked" />
+                    </StackLayout>
+
+
+
+                    <Label Text="HISTORIAL" BackgroundColor="#102f6f" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HeightRequest="40" Margin="0,0,0,20"/>
+                    <StackLayout>
+                        <ListView x:Name="historialLista">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <TextCell Text="{Binding fecha}" Detail="{Binding direccion}"  />
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackLayout>
+                    
+                </StackLayout>
+
+                <Label Grid.Row="2" Text="2019. Secretaría de Seguridad Pública Municipal de Corregidora. v2.1." TextColor="#102f6f" HorizontalTextAlignment="Center" />
+                <Label />
+
+                <!--<Button Text="Registrar Frecuencia de Paso" Clicked="Button_Clicked" />
+                    <Button x:Name="bnt1" Text="Enviar" Clicked="btn1_click" />-->
+            </Grid>
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>

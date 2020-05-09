@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:signature="clr-namespace:SignaturePad.Forms;assembly=SignaturePad.Forms"
+             x:Class="QRReaderDemo.PageFirma">
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="back1280.png" Aspect="AspectFill" />
+            <BoxView Color="AliceBlue" Opacity="0.9"/>
+
+            <StackLayout>
+                <signature:SignaturePadView x:Name="Firma" StrokeWidth="3" WidthRequest="280" HeightRequest="350" BackgroundColor="White" StrokeColor="Black" CaptionText="Firma del evaluado" VerticalOptions="CenterAndExpand" />
+                <Button x:Name="Guardar" Clicked="Guardar_Clicked" Text="Guardar firma" TextColor="White" BackgroundColor="LightGreen" VerticalOptions="Center" />
+            </StackLayout>
+        </Grid>
+        
+    </ContentPage.Content>
+</ContentPage>
